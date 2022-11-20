@@ -6,6 +6,11 @@ from app_pages.page_summary import page_summary_body
 from app_pages.page_churned_customer_study import page_churned_customer_study_body
 from app_pages.page_prospect import page_prospect_body
 from app_pages.page_project_hypothesis import page_project_hypothesis_body
+
+# Last three pages follow the same pattern
+# First, it first loads the files, like pipeline, plots and datasets.
+# Then it executes the tasks we agreed for each page using the streamlit commands. 
+# And finally, it calls the functions, like clf_performance() to evaluate the pipeline performance.
 from app_pages.page_predict_churn import page_predict_churn_body
 from app_pages.page_predict_tenure import page_predict_tenure_body
 from app_pages.page_cluster import page_cluster_body

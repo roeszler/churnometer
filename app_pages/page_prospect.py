@@ -150,6 +150,7 @@ def DrawInputsWidgets():
         )
     X_live[feature] = st_widget
 
+    # To view the action of updating the widgets:
     # st.write(X_live)
 
     return X_live

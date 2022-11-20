@@ -6,13 +6,14 @@ def predict_churn(X_live, churn_features, churn_pipeline_dc_fe, churn_pipeline_m
     # from live data, subset features related to this pipeline
     X_live_churn = X_live.filter(churn_features)
 
-    # apply data cleaning / feat engine pipeline to live data
+    # apply data cleaning / feat engine pipeline 1 to live data
     X_live_churn_dc_fe = churn_pipeline_dc_fe.transform(X_live_churn)
 
-    # predict
+    # predict using the modelling pipeline 2
     churn_prediction = churn_pipeline_model.predict(X_live_churn_dc_fe)
     churn_prediction_proba = churn_pipeline_model.predict_proba(
         X_live_churn_dc_fe)
+    # uncomment to show the prediction probability for each class.
     # st.write(churn_prediction_proba)
 
     # Create a logic to display the results
