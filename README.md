@@ -58,9 +58,9 @@ As a Data Analyst from Code Institute Consulting, you are requested by the Telco
 	* We will plot the main variables against Churn to visualize insights.
 
 * **Business Requirement 2:** Classification, Regression, Cluster and Data Analysis
-	* We want to predict if a prospect will churn or not. We want to build a binary classifier.
-	* We want to predict the tenure level for a prospect that is expected to churn. We want to build a regression model or change the ML task to classification depending on the regressor performance.
-	* We want to cluster similar customers, to predict from which cluster a prospect will belong.
+	* We want to **predict if a prospect will churn** or not. We want to build a binary classifier.
+	* We want to **predict the tenure level** for a prospect that is expected to churn. We want to build a **regression model** or change the ML task **to classification** depending on the regressor performance.
+	* We want to cluster similar customers, to **predict from which cluster** a prospect will belong.
 	* We want to understand a cluster profile to present potential options to maintain or bring the prospect to a non-churnable cluster.
 
 
